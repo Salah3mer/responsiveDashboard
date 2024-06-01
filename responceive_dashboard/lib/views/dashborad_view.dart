@@ -13,6 +13,7 @@ class DashBoradView extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const Scaffold(
+        backgroundColor: Color(0xffE5E5E5),
         body: DashBoradViewBody(),
       ),
     );

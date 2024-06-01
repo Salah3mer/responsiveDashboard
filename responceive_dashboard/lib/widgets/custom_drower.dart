@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:responceive_dashboard/models/drower_item_model.dart';
+import 'package:responceive_dashboard/models/user_info_model.dart';
 import 'package:responceive_dashboard/utils/app_images.dart';
-import 'package:responceive_dashboard/views/widgets/active_and_inactive.dart';
-import 'package:responceive_dashboard/views/widgets/drawer_list_item.dart';
-import 'package:responceive_dashboard/views/widgets/user_info_item.dart';
+import 'package:responceive_dashboard/widgets/active_and_inactive.dart';
+import 'package:responceive_dashboard/widgets/drawer_list_item.dart';
+import 'package:responceive_dashboard/widgets/user_info_item.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
@@ -17,16 +18,21 @@ class CustomDrawer extends StatelessWidget {
         child: CustomScrollView(
           slivers: [
             SliverToBoxAdapter(
-              child: UserInfoItem(
-                  image: AppImages.imagesAvatar3,
-                  title: 'Lekan Okeowo',
-                  subTitle: 'demo@gmail.com'),
-            ),
+                child: UserInfoItem(
+              userInfoModel: UserInfoModel(
+                image: AppImages.imagesAvatar3,
+                title: 'Lekan Okeowo',
+                subTitle: 'demo@gmail.com',
+              ),
+            )),
             DrawerListView(),
             SliverFillRemaining(
               hasScrollBody: false,
               child: Column(children: [
-                Expanded(child: SizedBox()),
+                Expanded(
+                    child: SizedBox(
+                  height: 20,
+                )),
                 InActiveDrawerItem(
                     drowerItemModel: DrawerItemModel(
                         image: AppImages.imagesSettings,
