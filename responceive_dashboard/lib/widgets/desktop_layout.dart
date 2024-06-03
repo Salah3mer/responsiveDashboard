@@ -1,8 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/widgets.dart';
-import 'package:responceive_dashboard/widgets/all_expenses.dart';
+import 'package:responceive_dashboard/widgets/all_expenses_and_qucik_invoice_section.dart';
 import 'package:responceive_dashboard/widgets/custom_drower.dart';
-import 'package:responceive_dashboard/widgets/quick_invoice.dart';
 
 class DesktopLayout extends StatelessWidget {
   const DesktopLayout({super.key});
@@ -17,9 +16,7 @@ class DesktopLayout extends StatelessWidget {
         ),
         Expanded(
           flex: 2,
-          child: Column(
-            children: [AllExpenses(), QuickInvoice()],
-          ),
+          child: AllExpensesAndQuickInvoiceSection(),
         )
       ],
     );
