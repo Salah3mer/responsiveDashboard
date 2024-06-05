@@ -31,7 +31,7 @@ class QuickInvoice extends StatelessWidget {
       ),
     ];
     return ContainerDecration(
-      padding: 24,
+      contentPadding: 24,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
