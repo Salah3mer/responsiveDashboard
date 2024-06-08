@@ -11,7 +11,7 @@ class IncomeHeader extends StatelessWidget {
       children: [
         Text(
           'Income',
-          style: AppStyles.font20SimeBoldcolordarkblue,
+          style: AppStyles.font20SemiBoldColorDarkBlue(context),
         ),
         const Expanded(child: SizedBox()),
         const RangeOptions()

@@ -9,15 +9,16 @@ class CardAndTransactoin extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const ContainerDecration(
+        contentPadding: 10,
         child: Column(
-      children: [
-        MyCardSection(),
-        Divider(
-          height: 40,
-          color: Color(0xffF1F1F1),
-        ),
-        TransactionHistory()
-      ],
-    ));
+          children: [
+            MyCardSection(),
+            Divider(
+              height: 40,
+              color: Color(0xffF1F1F1),
+            ),
+            TransactionHistory()
+          ],
+        ));
   }
 }

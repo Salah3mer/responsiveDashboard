@@ -33,6 +33,55 @@ class _AllExpensesItemListViewState extends State<AllExpensesItemListView> {
   @override
   Widget build(BuildContext context) {
     return Row(
+      children: [
+        Expanded(
+          child: InkWell(
+            onTap: () {
+              setState(() {
+                currentIndex = 0;
+              });
+            },
+            child: AllEpensesItem(
+              allExpensesItemModel: items[0],
+              isActive: currentIndex == 0,
+            ),
+          ),
+        ),
+        const SizedBox(
+          width: 8,
+        ),
+        Expanded(
+          child: InkWell(
+            onTap: () {
+              setState(() {
+                currentIndex = 1;
+              });
+            },
+            child: AllEpensesItem(
+              allExpensesItemModel: items[1],
+              isActive: currentIndex == 1,
+            ),
+          ),
+        ),
+        const SizedBox(
+          width: 8,
+        ),
+        Expanded(
+          child: InkWell(
+            onTap: () {
+              setState(() {
+                currentIndex = 2;
+              });
+            },
+            child: AllEpensesItem(
+              allExpensesItemModel: items[2],
+              isActive: currentIndex == 2,
+            ),
+          ),
+        )
+      ],
+    );
+    return Row(
         children: items.asMap().entries.map((e) {
       int index = e.key;
       var item = e.value;

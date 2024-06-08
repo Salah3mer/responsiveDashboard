@@ -7,12 +7,12 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:responceive_dashboard/views/dashborad_view.dart';
+import 'package:responceive_dashboard/dashborad.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(const DashBoradView());
+    await tester.pumpWidget(const DashBorad());
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);

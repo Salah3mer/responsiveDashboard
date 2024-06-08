@@ -28,7 +28,7 @@ class _MyCardSectionState extends State<MyCardSection> {
       children: [
         Text(
           'My Card',
-          style: AppStyles.font20SimeBoldcolordarkblue,
+          style: AppStyles.font20SemiBoldColorDarkBlue(context),
         ),
         const SizedBox(
           height: 20,

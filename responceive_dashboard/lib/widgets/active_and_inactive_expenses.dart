@@ -32,19 +32,28 @@ class InActiveExpensesItem extends StatelessWidget {
           const SizedBox(
             height: 34,
           ),
-          Text(allExpensesItemModel.title,
-              style: AppStyles.font16SimeBoldcolordarkblue),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(allExpensesItemModel.title,
+                style: AppStyles.font16SemiBoldColorDarkBlue(context)),
+          ),
           const SizedBox(
             height: 8,
           ),
-          Text(allExpensesItemModel.date,
-              style: AppStyles.font14RegulercolorlightGray),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(allExpensesItemModel.date,
+                style: AppStyles.font14RegularColorLightGray(context)),
+          ),
           const SizedBox(
             height: 16,
           ),
-          Text(allExpensesItemModel.price,
-              style: AppStyles.font24SimeBoldcolorWhite
-                  .copyWith(color: Colors.blue)),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(allExpensesItemModel.price,
+                style: AppStyles.font24SemiBoldColorWhite(context)
+                    .copyWith(color: Colors.blue)),
+          ),
         ],
       ),
     );
@@ -77,20 +86,29 @@ class ActiveExpensesItem extends StatelessWidget {
           const SizedBox(
             height: 34,
           ),
-          Text(allExpensesItemModel.title,
-              style: AppStyles.font16SimeBoldcolordarkblue
-                  .copyWith(color: Colors.white)),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(allExpensesItemModel.title,
+                style: AppStyles.font16SemiBoldColorDarkBlue(context)
+                    .copyWith(color: Colors.white)),
+          ),
           const SizedBox(
             height: 8,
           ),
-          Text(allExpensesItemModel.date,
-              style: AppStyles.font14RegulercolorlightGray
-                  .copyWith(color: const Color(0xffFAFAFA))),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(allExpensesItemModel.date,
+                style: AppStyles.font14RegularColorLightGray(context)
+                    .copyWith(color: const Color(0xffFAFAFA))),
+          ),
           const SizedBox(
             height: 16,
           ),
-          Text(allExpensesItemModel.price,
-              style: AppStyles.font24SimeBoldcolorWhite),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(allExpensesItemModel.price,
+                style: AppStyles.font24SemiBoldColorWhite(context)),
+          ),
         ],
       ),
     );

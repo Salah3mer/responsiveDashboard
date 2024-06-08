@@ -13,6 +13,7 @@ class CustomDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.white,
+      width: MediaQuery.sizeOf(context).width * .7,
       child: const Padding(
         padding: EdgeInsets.only(top: 30),
         child: CustomScrollView(

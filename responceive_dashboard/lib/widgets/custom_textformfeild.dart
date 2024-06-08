@@ -26,7 +26,7 @@ class CustomTextFormfiled extends StatelessWidget {
           borderRadius: BorderRadius.all(Radius.circular(12)),
         ),
         hintText: hint,
-        hintStyle: AppStyles.font16Regularcolordarkblue
+        hintStyle: AppStyles.font16Regularcolordarkblue(context)
             .copyWith(color: const Color(0xffAAAAAA)),
       ),
     );

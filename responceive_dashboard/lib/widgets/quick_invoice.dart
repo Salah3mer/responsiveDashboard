@@ -39,7 +39,7 @@ class QuickInvoice extends StatelessWidget {
             children: [
               Text(
                 'Quick Invoice',
-                style: AppStyles.font20SimeBoldcolordarkblue,
+                style: AppStyles.font20SemiBoldColorDarkBlue(context),
               ),
               const Expanded(child: SizedBox()),
               const Icon(
@@ -104,7 +104,7 @@ class CustomButton extends StatelessWidget {
                   borderRadius: BorderRadius.circular(12))),
           child: Text(
             name,
-            style: AppStyles.font18SimeBoldcolorWhite.copyWith(
+            style: AppStyles.font18SemiBoldColorWhite(context).copyWith(
                 color: color != null ? const Color(0xff4EB7F2) : Colors.white),
           )),
     );

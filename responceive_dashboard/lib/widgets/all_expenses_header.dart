@@ -13,7 +13,7 @@ class AllExpensesHeader extends StatelessWidget {
       children: [
         Text(
           'All Expenses',
-          style: AppStyles.font20SimeBoldcolordarkblue,
+          style: AppStyles.font16SemiBoldColorDarkBlue(context),
         ),
         const Expanded(child: SizedBox()),
         const RangeOptions()

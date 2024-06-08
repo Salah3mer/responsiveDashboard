@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:responceive_dashboard/widgets/all_expenses_header.dart';
 import 'package:responceive_dashboard/widgets/all_expenses_list_view.dart';
 import 'package:responceive_dashboard/widgets/container_decration.dart';
@@ -9,6 +10,7 @@ class AllExpenses extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const ContainerDecration(
+      padding: 0,
       child: Column(
         children: [
           AllExpensesHeader(),

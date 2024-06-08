@@ -17,9 +17,13 @@ class InActiveDrawerItem extends StatelessWidget {
       leading: SvgPicture.asset(drowerItemModel.image),
       title: Padding(
         padding: const EdgeInsets.only(left: 10.0),
-        child: Text(
-          drowerItemModel.title,
-          style: AppStyles.font16Regularcolordarkblue,
+        child: FittedBox(
+          alignment: AlignmentDirectional.centerStart,
+          fit: BoxFit.scaleDown,
+          child: Text(
+            drowerItemModel.title,
+            style: AppStyles.font16Regularcolordarkblue(context),
+          ),
         ),
       ),
     );
@@ -40,9 +44,13 @@ class ActiveDrawerItem extends StatelessWidget {
       leading: SvgPicture.asset(drowerItemModel.image),
       title: Padding(
         padding: const EdgeInsets.only(left: 10.0),
-        child: Text(
-          drowerItemModel.title,
-          style: AppStyles.font16BoldcolorBlue,
+        child: FittedBox(
+          alignment: AlignmentDirectional.centerStart,
+          fit: BoxFit.scaleDown,
+          child: Text(
+            drowerItemModel.title,
+            style: AppStyles.font16BoldColorBlue(context),
+          ),
         ),
       ),
       trailing: Container(

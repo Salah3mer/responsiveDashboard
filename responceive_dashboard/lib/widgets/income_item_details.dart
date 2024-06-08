@@ -20,14 +20,22 @@ class IncomeItemDetails extends StatelessWidget {
           shape: const OvalBorder(),
         ),
       ),
-      title: Text(
-        incomeItemDetailsModel.title,
-        style: AppStyles.font16Regularcolordarkblue,
+      title: FittedBox(
+        fit: BoxFit.scaleDown,
+        alignment: AlignmentDirectional.centerStart,
+        child: Text(
+          incomeItemDetailsModel.title,
+          style: AppStyles.font16Regularcolordarkblue(context),
+        ),
       ),
-      trailing: Text(
-        incomeItemDetailsModel.value,
-        style: AppStyles.font16Mediumcolordarkblue.copyWith(
-          color: const Color(0xff208CC8),
+      trailing: FittedBox(
+        fit: BoxFit.scaleDown,
+        alignment: AlignmentDirectional.centerStart,
+        child: Text(
+          incomeItemDetailsModel.value,
+          style: AppStyles.font16MediumColorDarkBlue(context).copyWith(
+            color: const Color(0xff208CC8),
+          ),
         ),
       ),
     );

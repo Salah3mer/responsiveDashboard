@@ -1,16 +1,16 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
-class IcomeChart extends StatefulWidget {
-  const IcomeChart({
+class IncomeChart extends StatefulWidget {
+  const IncomeChart({
     super.key,
   });
 
   @override
-  State<IcomeChart> createState() => _IcomeChartState();
+  State<IncomeChart> createState() => _IncomeChartState();
 }
 
-class _IcomeChartState extends State<IcomeChart> {
+class _IncomeChartState extends State<IncomeChart> {
   int activeIndex = -1;
   @override
   Widget build(BuildContext context) {
@@ -27,7 +27,6 @@ class _IcomeChartState extends State<IcomeChart> {
             },
           ),
           sectionsSpace: 0,
-          centerSpaceRadius: 40,
           sections: [
             PieChartSectionData(
               showTitle: false,
